@@ -23,13 +23,8 @@ Nếu bạn muốn đóng góp, hãy tạo một pull request hoặc mở issue 
 
 Clone Repository
 ```sh
-git clone https://github.com/QuocB-HC/Gorm-Tutorials.git
-cd Gorm-Tutorials
-```
-
-Chọn Dự Án
-```sh
-cd project-name
+git clone https://github.com/QuocB-HC/REST-API-Golang.git
+cd REST-API-Golang
 ```
 
 Chạy Dự Án
