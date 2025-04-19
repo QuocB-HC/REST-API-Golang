@@ -27,6 +27,11 @@ git clone https://github.com/QuocB-HC/REST-API-Golang.git
 cd REST-API-Golang
 ```
 
+Tạo database trên Docker
+```sh
+docker run --name postgres -e POSTGRES_PASSWORD=your_password -p 5432:5432 -d postgres
+```
+
 Chạy Dự Án
 ```sh
 go run main.go
