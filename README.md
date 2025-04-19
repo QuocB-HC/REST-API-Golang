@@ -27,9 +27,25 @@ git clone https://github.com/QuocB-HC/REST-API-Golang.git
 cd REST-API-Golang
 ```
 
-Tạo database trên Docker
+Tạo Database Trên Docker
 ```sh
 docker run --name postgres -e POSTGRES_PASSWORD=your_password -p 5432:5432 -d postgres
+```
+
+Vào Container postgres
+```sh
+docker exec -it postgres bash
+psql -U postgres -d postgres
+```
+
+Tạo Extension uuid
+```sh
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+```
+
+Tạo Type enum
+```sh
+CREATE TYPE status_enum AS ENUM ('Doing', 'Done', 'Pending');
 ```
 
 Chạy Dự Án
